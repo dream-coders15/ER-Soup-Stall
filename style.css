@@ -1,0 +1,321 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Pangolin', cursive;
+    
+}
+/* ----------------------- navbar ------------------------------ */
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    align-items: center;
+    background: #00783e;
+    min-height: 10vh;
+    color: white;
+
+}
+.logo{
+    grid-column: 2/3;
+}
+.logo img{
+    width: 250px;
+}
+.contact{
+    justify-self: end;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    font-size: 1em;
+}
+.contact h4{
+    font-size: 1em;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+}
+.contact a:hover{
+    padding: 5px;
+    background: #fff;
+    color: #00783e;
+    border-radius: 3px;
+}
+/* ----------------------- Home ------------------------------ */
+#home{
+    height: 90vh;
+}
+.home img{
+    width: 100%;
+    position: relative;
+    top: 25%;
+}
+.home-content {
+    font-size: 1em;
+    margin-top: 20%;
+}
+.home-content h1{
+    color: #00783e;
+}
+.home-content h5{
+    color: #cae3d7;
+}
+.home-content p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.line-head{
+    display: flex;
+    flex-direction: row;
+}
+.line{
+    width: 10%;
+    height: 6px;
+    background: #00783e;
+    border-radius: 10%;
+}
+.line-1{
+    width: 5%;
+    height: 5px;
+    background: #cae3d7;
+    margin-left: 10px;
+}
+.line-2{
+    width: 5px;
+    height: 5px;
+    background: #cae3d7;
+    margin-left: 10px;
+}
+.png{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+/* ----------------------- To-Do-List ------------------------------ */
+
+.list-head h1{
+    margin-top: 50px;
+    color: #00783e;
+    font-family: 'Oswald', sans-serif;
+}
+
+.to-do-list{
+
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr ));
+    justify-items: center;
+}
+.card{
+    border: none;
+    box-shadow:  -3px -3px 7px #ffffff73,
+				2px 2px 5px rgba(94, 104, 121, 0.288 );
+}
+.card-title{
+    color: #00783e;
+}
+.card-text{
+    color: #c7c7c7;
+    font-family: 'poppins';
+}
+#list-2{
+    margin-top: 50px;
+}
+.card-3 img{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+/* ----------------------- Sales ------------------------------ */
+
+.sales{
+    width: 100%;
+    height: auto;
+}
+.sales-home{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+.shake-little{
+    width: 150px  !important;
+}
+.sales-img{
+    position: relative;
+    top: 10%;
+}
+.sales-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-image: 1px solid green;
+}
+.sales-content h1{
+    padding-top: 30px;
+    font-weight: 900;
+    color: #00783e;
+}
+.sales-content p{
+    font-size: .8em;
+    font-family: 'poppins';
+}
+.sales-content h5{
+    color: #cae3d7;
+}
+
+.card-body a{
+    color: #fff;
+}
+.card-body a:hover{
+    transform: scale(1.2);
+    color: #cae3d7;
+}
+
+
+
+.btn-delivery a{
+    color: #fff;
+}
+.btn-delivery a:hover{
+    transform: scale(1.2);
+    color: #fff;
+}
+
+
+
+/* ----------------------- Contact ------------------------------ */
+#contact{
+    width: 100%;
+    height: 41vh;
+    background: #3f6e23;
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.contact-head h1{
+    padding-top: 10px;
+    color: #cae3d7;
+    letter-spacing: 5px;
+}
+.contact-logo i{
+    color: #cae3d7;
+    font-size: 40px;
+    padding: 0 30px;
+    padding-top: 10px;
+    transition: .5s ease-in;
+}
+.contact-logo i:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+.contact-add{
+    color: #fff;
+    color: #cae3d7;
+    letter-spacing: 2px;
+}
+.footer p{
+    color: #cae3d7;
+    font-size: .8em;
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.auther{
+    color: #cae3d7;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+.auther h6{
+    font-size: .8em;
+    padding: 0 10px;
+    
+}
+
+.google-form>iframe{
+    width: 540px !important;
+    height: 472px !important;
+}
+.register{
+    margin-top: 100px;
+}
+
+
+
+.content-delivery{
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif ;
+}
+
+
+
+
+
+
+
+@media(max-width: 700px){
+    .logo img{
+        width: 200px;
+        margin-left: -50px;
+    }
+    .contact h4{
+        font-size: .8em;
+        padding-top: 6px;
+    }
+    #home{
+        height: auto;
+    }
+    .sales{
+        width: 100%;
+        height: auto;
+    }
+    .home-c h1{
+        font-size: 1.8em;
+    }
+    .home-c h5{
+        font-size: .9em;
+    }
+    .home-c p{
+        font-size: .8em;
+    }
+    .sales-img{
+        position: relative;
+        top: 0%;
+    }
+    .list-head h1{
+        margin-top: 20px;
+    }
+    .card-2{
+        margin-top: 30px;
+    }
+    .card-3{
+        margin-top: 30px;
+    }
+    
+    .google-form>iframe{
+        margin-top: 20% !important;
+        width: 340px !important;
+        height: 472px !important;
+    }
+    #contact{
+        height: auto;
+    }
+    .contact-head h1{
+        font-size: 2em;
+    }
+    .contact-logo i{
+        font-size: 25px;
+    }
+    .footer h6{
+        font-size: 10px;
+    }
+    .auther h6{
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+}
